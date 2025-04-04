@@ -9,6 +9,7 @@ body{
 }
 .main {
   background-image: url(IN-en-20240819-TRIFECTA-perspective_WEB_3c576fa6-cd23-46b6-ac3f-1ad2bb0f66fb_large.jpg);
+  /* background-size:cover; */
   position: relative;
   background-repeat: no-repeat;
   background-position: center center;
@@ -141,8 +142,6 @@ cursor: pointer;
 .border{
   background-color: rgb(166, 160, 160);
   height: 2px;
-  /* margin-top: -4.7rem; */
-
 }
 
 .head{
@@ -395,7 +394,7 @@ footer ul li a{
     text-align: center;
    }
   .grid ul li button img{
- width: 90vw;
+ width: 40vw;
  height: auto;
  
   }
@@ -407,7 +406,7 @@ footer ul li a{
 
   .box{
     display: flex;
-    justify-content: ;
+    justify-content: center;
     align-items: center;
   }
   
@@ -459,9 +458,36 @@ footer {
 .grd ul {
   gap: 2.3vw;
 }
+.main {
+  background-size:cover;
+   position: relative;
+   height: 90vh;
+ }
+ .main .box {
+  height: 90vh;
+  width: 100%;
+  opacity: 0.75;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
 }
 
+
 @media screen and (max-width: 500px)  {
+  .main {
+   background-size:cover;
+    position: relative;
+    height: 70vh;
+  }
+  .main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.75;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
   .logo img {
     height: 35px;
   }
@@ -471,6 +497,10 @@ footer {
   .contant .para {
     padding: 0px;
 }
+.grid ul li button img{
+  width: 80vw;
+  height: auto;
+   }
 .header{
   padding: 0;
 }
